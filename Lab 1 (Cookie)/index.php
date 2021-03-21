@@ -7,13 +7,10 @@
 		$password=$_POST["password"];
 		if($username == "asif" && $password == "1234"){
 			setcookie("username",$username,time()+120);
-			header("Location : dashboard.php");
+			header("Location:dashboard.php");
 		}
 		else
 			$err_message= "Invalid Username or Password";
-	
-	
-	
 	
 	}
 

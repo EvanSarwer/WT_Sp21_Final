@@ -5,7 +5,7 @@
 	}
 	require_once "db_config.php";
 	
-	$query = "select * from sudents";
+	$query = "select * from students";
 	$result = get($query);
 	
 ?>
@@ -18,6 +18,7 @@
 			<th>Credit</th>
 			<th>CGPA</th>
 			<th>Department</th>
+			<th colspan="2">Operation</th>
 		</tr>
 		
 <?php
@@ -29,8 +30,8 @@
 		echo "<td>".$row["credit"]."</td>";
 		echo "<td>".$row["cgpa"]."</td>";
 		echo "<td>".$row["dept_id"]."</td>";
-		echo "<td><a href="allstudents.php"> All Students </a></td>";
-		echo "<td><a href="allstudents.php"> All Students </a></td>";
+		echo "<td><a href=''> Edit </a></td>";
+		echo "<td><a href=''> Delete </a></td>";
 		echo "</tr>";
 	}
 	
